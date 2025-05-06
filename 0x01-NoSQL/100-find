@@ -1,0 +1,5 @@
+// 100-find
+// ALX - Regex filter script
+// Lists all documents in the 'school' collection where the name starts with "ALX"
+
+db.school.find({ name: { $regex: '^ALX' } })
